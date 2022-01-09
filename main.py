@@ -41,14 +41,14 @@ def main():
 
     if start == "1":
         message = input(Fore.WHITE + '[' + Fore.GREEN + "+" + Fore.WHITE + ']' + 'your message : ')
-        webhook = DiscordWebhook(url='https://discord.com/api/webhooks/928961202145603654/HuWyylzJmbBNA25_OYVC1Wk4UoZOSjah7fx2M3dRmZBxfoz7Wm5bCxUG4LXiV_6f_Sfe', content=message)
+        webhook = DiscordWebhook(url='your Webhook', content=message)
         webhook.execute() 
         print(Fore.WHITE + '[' + Fore.YELLOW + "-" + Fore.WHITE + ']' + 'message send !')
         time.sleep(1.5)
         os.system('cls')
         main()
     if start == "2":
-        webhook = DiscordWebhook(url='https://discord.com/api/webhooks/928961202145603654/HuWyylzJmbBNA25_OYVC1Wk4UoZOSjah7fx2M3dRmZBxfoz7Wm5bCxUG4LXiV_6f_Sfe', username="Captain Devoir")
+        webhook = DiscordWebhook(url='your Webhook', username="Captain Devoir")
         cours = input(Fore.WHITE + '[' + Fore.GREEN + "+" + Fore.WHITE + ']' +"description veux tu donner : ")
         prof = input(Fore.WHITE + '[' + Fore.GREEN + "+" + Fore.WHITE + ']' +"quells profs de la journer : ")
         Heure = input(Fore.WHITE + '[' + Fore.GREEN + "+" + Fore.WHITE + ']' +"quells Heures de la journer : ")
